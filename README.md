@@ -31,7 +31,7 @@ Following a disaster, there are a number of different problems that may arise. D
 In this project my aim was to analyze disaster data from Figure Eight organisation to build a model for an API that classifies disaster messages. It includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data. 
 
 ## File Descriptions<a name="files"></a>
-There are three folders in this repository:
+There are 4 folders in this repository:
 
 1) data
 * disaster_categories.csv: csv file containing data of the labelled categories for id
@@ -46,6 +46,8 @@ There are three folders in this repository:
 * templates: contains template html files
   - master.html: main page of web app
   - go.html: classification result page of web app
+4) result 
+* Snapshots of the web application 
 
 ## Instructions to implement the project<a name="instructions"></a>
 1. Run the following commands in the project's root directory to set up your database and model.
