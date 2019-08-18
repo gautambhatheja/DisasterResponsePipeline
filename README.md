@@ -78,4 +78,4 @@ There are three folders in this repository:
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 I must give credit to FigureEight organisation for the data. I would also thank Udacity for providing the starter code for this project. 
-Final code after making the changes to the initial code was done by myself. 
+Final code presented is written by me. 
