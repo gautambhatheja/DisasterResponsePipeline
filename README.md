@@ -39,8 +39,8 @@ There are three folders in this repository:
 * process_data.py: ETL pipeline script to read the dataset, clean the data, and then store it in a SQLite database
 * DisasterResponse.db: SQLite database containing cleaned and merged data from messages and categories files
 2) models
-* train_classifier.py: ML pipeline script that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model that uses the message column to predict classifications for 36 categories (multi-output classification)
-* classifier.pkl: Final trained model
+* train_classifier.py: ML pipeline script to output and save a final model that uses the message column to predict classifications for 36 categories (multi-output classification)
+* classifier.pkl: Final trained model pickle file
 3) app
 * run.py: Python script run the web application using Flask
 * templates: contains template html files
@@ -60,7 +60,22 @@ There are three folders in this repository:
 3. Go to http://0.0.0.0:3001/
 
 ## Results<a name="results"></a>
-
+1. ETL Pipeline script, process_data.py, was created that:
+* Loads the messages and categories datasets
+* Merges the two datasets
+* Cleans the data
+* Stores it in a SQLite database
+2. ML Pipeline script, train_classifier.py, was created that:
+* Loads data from the SQLite database
+* Splits the dataset into training and test sets
+* Builds a text processing and machine learning pipeline
+* Trains and tunes a model using GridSearchCV
+* Outputs results on the test set
+* Exports the final model as a pickle file
+3. Flask Web App was created to: 
+* Show exploratory data visualizations on home page 
+* Classify the message, that user enters on the web page, into different categories 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
-
+I must give credit to FigureEight organisation for the data. I would also thank Udacity for providing the starter code for this project. 
+Final code after making the changes to the initial code was done by myself. 
